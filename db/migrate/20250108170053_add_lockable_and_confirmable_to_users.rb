@@ -1,0 +1,10 @@
+class AddLockableAndConfirmableToUsers < ActiveRecord::Migration[7.1]
+  def change
+    unless column_exists?(:users, :role)
+
+      add_column :users, :failed_attempts, :integer
+      add_column :users, :unlock_token, :string
+      add_column :users, :locked_at, :datetime
+    end
+  end
+end

@@ -5,4 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :lockable, :confirmable 
 
   enum role: [:patient, :doctor, :admin]
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end

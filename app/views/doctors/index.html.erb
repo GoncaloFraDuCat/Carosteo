@@ -1,11 +1,16 @@
-<h1>Doctors#index</h1>
 
+<div class="container-card">
+    <h1>Doctors</h1>
 <% @doctors.each do |doctor| %>
+    <div class="doctor_card">
     <h2><%= doctor.first_name + " " + doctor.last_name %></h2>
     <p><%= doctor.email %></p>
     <p><%= doctor.id %></p>
     <p><%= doctor.email %></p>
     <p><%= doctor.first_name %></p>
     <p><%= doctor.last_name %></p>
-    <p><%= doctor.role %></p>
+    <p><%= doctor.role.capitalize %></p>
+ </div>
  <% end %>
+
+</div>

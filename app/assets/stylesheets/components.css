@@ -1,0 +1,13 @@
+.container-card {
+    margin: 0 15vh;
+}
+
+.doctor_card {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    padding: 3vh;
+    box-shadow: 10px 10px 33px -7px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
